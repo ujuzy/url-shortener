@@ -8,6 +8,6 @@ import (
 func main() {
 	conf := config.ReadConfig()
 
-	privateApp := app.New()
-	privateApp.Run(conf.Server.Port)
+	privateApp := app.New(conf)
+	privateApp.Run()
 }
